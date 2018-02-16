@@ -1,0 +1,301 @@
+
+/*--------------------PAGE STRUCTURE----------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Karla-Regular;
+}
+
+.body-margin {
+  margin: 12px;
+}
+
+.body-bounds {
+  max-width: 922px;
+  margin: auto;
+  align-items: center;
+}
+
+
+/*--------------------TYPOGRAPHY----------------------*/
+
+h1 {
+  color: #333;
+  font-family: Pacifico;
+  font-size: 3rem;
+  color: #757575;
+  font-weight: 100;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  display: block;
+}
+
+a {
+  color: rgb(226, 87, 76);
+  cursor: pointer;
+}
+
+
+
+/*--------------------NAV BAR----------------------*/
+
+nav {
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  position: fixed;
+  width: 100%;
+  height: 52px;
+}
+
+nav ul {
+  margin: auto;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-family: Karla-Bold;
+}
+nav ul li a {
+  color: white;
+  display: inline-block;
+  line-height: 2em;
+  padding: .75em 1.5em;
+  text-decoration: none;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a:hover {
+  color: rgb(226, 87, 76);
+}
+
+.nav-bounds {
+  max-width: 922px;
+  margin: auto;
+  align-items: center;
+}
+
+.logo {
+  height: 36px;
+}
+
+/*--------------------FOOTER----------------------*/
+
+footer {
+  margin: 0;
+  background-color: #222;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+}
+
+footer p, footer li {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  color: white;
+  width: 50%;
+  display: inline;
+}
+
+footer ul {
+  margin: auto;
+  padding: 0;
+  width: 50%;
+}
+
+footer ul li {
+  list-style: none;
+  color: white;
+  display: block;
+  line-height: 2em;
+  text-decoration: none;
+}
+
+
+footer ul li :hover {
+  color: rgb(226, 87, 76);
+}
+
+
+
+/*--------------------TABLE----------------------*/
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+    margin: auto;
+    display:inline;
+}
+
+td, th {
+  border: 1px solid #c8c8c8;
+  padding: 8px 8px;
+  width: 100%;
+}
+
+th {
+  background-color: #e6e6e6;
+}
+
+tr:hover {
+  background-color: #FBF6D9;
+}
+
+td p {
+  text-align: left;
+  margin: auto;
+  padding: 0;
+}
+
+/*--------------------FLEX GRID----------------------*/
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+/*--------------------IMAGE----------------------*/
+
+.hero-image {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-image {
+  width: 100%;
+  padding-top: 24px;
+  margin: auto;
+  align-items: center;
+}
+
+.image-block {
+  margin-top: 24px;
+  box-shadow: rgba(0, 0, 0, 0.6) 1px 1px 6px 1px;
+}
+
+
+/*--------------------MAP----------------------*/
+
+.map {
+  height: 280px;
+  width: 100%;
+  max-width: 704px;
+  padding-bottom: 3rem;
+}
+
+
+/****************************************    MOBILE     **************************************/
+
+
+  @media screen and (min-width: 100px) {
+
+    nav {
+      height: 104px;
+  }
+
+   nav ul li {
+    display: block;
+    align-items: center;
+    margin: auto;
+  }
+
+   .logo {
+      align-items: center;
+      margin: 8px auto;
+      display: flex;
+  }
+
+   .image-block {
+    margin: 6px auto;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 12px 12px;
+  }
+
+  .body-margin {
+  margin: 12px;
+  }
+
+   footer ul li {
+    display: inline;
+  }
+
+  footer ul li p {
+    display: none;
+  }
+
+
+ footer .flex-grid {
+  display: block;
+  padding: 24px;
+  text-align:center;
+ }
+
+
+
+
+
+/****************************************    DESKTOP     **************************************/
+
+@media screen and (min-width: 600px) {
+
+.logo {
+    margin: 8px 15px;
+    display: inline;
+    float:left;
+}
+
+
+
+nav {
+  height: 52px;
+}
+
+nav ul {
+    display: inline-flex;
+    float: right;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 1rem;
+  display:inline;
+}
+
+
+.image-block {
+    display: inline;
+    margin: auto 6px;
+    width: 30%;
+}
+   
+.section-image {
+    margin: auto;
+    align-items: center;
+    max-width: 922px;
+}
+
+    }
